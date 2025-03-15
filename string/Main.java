@@ -9,12 +9,16 @@ public class Main {
         String trim = name.trim();
         boolean isEmpty = name.isEmpty();
         boolean haveSpace = name.contains(" ");
-        
 
-        System.out.printf("The length of %s word is %d\n", name, len);
+        char letter = name.charAt(0);
+        String replace = name.replace("J", "B");
+        
+        System.err.printf("first letter of the string %c\n", letter);
+        System.out.printf("the length of %s word is %d\n", name, len);
         System.out.println(upper);
         System.out.println(lower);
         System.err.println(trim);
+        System.err.printf("replace first letter to B %s\n", replace);
 
         if (isEmpty) {
             System.err.println("the string is empty string.");
