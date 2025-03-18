@@ -9,5 +9,9 @@ public class Main {
         String oddEven = (num %2 == 0) ? "even" : "odd";
         System.out.printf("%d is %s.\n", num, oddEven);
 
+        int hour = 10;
+        String AMPM = (hour < 12) ? "AM" : "PM";
+        System.out.printf("%d is %s.\n", hour, AMPM);
+
     }
 }
