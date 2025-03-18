@@ -8,9 +8,13 @@ public class Main {
         System.out.print("Enter ur email address: ");
         String email = scanner.nextLine();
 
-        String username = email.substring(0, email.indexOf("@"));
-        String domain = email.substring(email.indexOf("@")+1);
+        if (email.contains("@")) {
+            String username = email.substring(0, email.indexOf("@"));
+            String domain = email.substring(email.indexOf("@")+1);
+            System.out.printf("username: %s\nemail: %s", username, domain); 
+        } else {
+            System.out.print("Email must contain @ symbol!");
+        }
 
-        System.out.printf("username: %s\nemail: %s", username, domain);
     }
 }
