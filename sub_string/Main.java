@@ -1,7 +1,13 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        
-        String email = "email76@gmail.com";
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter ur email address: ");
+        String email = scanner.nextLine();
+
         String username = email.substring(0, email.indexOf("@"));
         String domain = email.substring(email.indexOf("@")+1);
 
