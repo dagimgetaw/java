@@ -13,5 +13,9 @@ public class Main {
         String AMPM = (hour < 12) ? "AM" : "PM";
         System.out.printf("%d is %s.\n", hour, AMPM);
 
+        int income = 50000;
+        double taxRate = (income >= 40000) ? 0.25 : 0.15;
+        System.out.printf("for income: %d tax rate is: %.2f.", income, taxRate);
+
     }
 }
