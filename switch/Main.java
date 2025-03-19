@@ -1,8 +1,14 @@
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        String day = "monday";
+        String day;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the day: ");
+        day = scanner.nextLine();
 
         switch (day) {
             case "monday" -> System.out.print("It is weekday.");
