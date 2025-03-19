@@ -20,5 +20,15 @@ public class Main {
             case "sunday" -> System.out.print("It is weekend.");
             default -> System.out.print(day + " is not in the list.");
         }
+        
+        // same as the upper one
+        
+        switch (day) {
+            case "monday", "tuesday", "wednesday", "thursday", "friday" -> 
+                System.out.print("It is weekday.");
+            case "saturday", "sunday" -> 
+                System.out.print("It is weekend.");
+            default -> System.out.print(day + " is not in the list.");
+        }
     }
 }
