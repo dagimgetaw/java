@@ -14,6 +14,16 @@ public class Main {
 
         System.out.printf("Hello, %s", name);
 
+        String quit = "";
+
+        while (!quit.equals("Q")) {
+            System.out.println("\nU are playing the game!");
+            System.out.print("Press Q to quit: ");
+            quit = scanner.nextLine().toUpperCase();
+        }
+
+        System.out.print("U quite the game.");
+
         scanner.close();
     }
 }
