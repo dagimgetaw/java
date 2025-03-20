@@ -17,6 +17,7 @@ public class Main {
 
         int tempTwo = -10;
 
+        // OR - if one of the statement is true it execute
         if (tempTwo < 0 || tempTwo > 30) {
             System.out.println("The weather is bad.");
         }
