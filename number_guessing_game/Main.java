@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        // number guessing game unlimited life
         
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
