@@ -14,8 +14,6 @@ public class FullName {
         lastName = scanner.nextLine();
 
         System.out.printf("Ur full name is %s.", getFullName(firstName, lastName));        
-
-        scanner.close();
     }
 
     static String getFullName(String firstName, String lastName) {
