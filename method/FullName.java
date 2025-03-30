@@ -13,13 +13,12 @@ public class FullName {
         System.out.print("Enter ur last name: ");
         lastName = scanner.nextLine();
 
-        getFullName(firstName, lastName);
-        
+        System.out.printf("Ur full name is %s.", getFullName(firstName, lastName));        
+
+        scanner.close();
     }
 
-    static void getFullName(String firstName, String lastName) {
-        String fullName = firstName + " " + lastName;
-
-       System.out.printf("Ur full name is %s.", fullName);
+    static String getFullName(String firstName, String lastName) {
+        return firstName + " " + lastName;
      }
 }
